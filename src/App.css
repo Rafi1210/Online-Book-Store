@@ -8,8 +8,19 @@ body{
     flex: auto;
 
 } */
-
 .container{
-    border: 1px solid red;
+    /* border: 1px solid blue; */
+    align-items: top;
+    
+}
+.primary-container{
+    /* border: 1px solid red; */
+    margin-top: 0px;
+    width: 1300px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: top;
     
     }
