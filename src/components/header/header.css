@@ -1,0 +1,20 @@
+.navbar{
+    display: flex; 
+    align-items:center;
+    justify-content: center;
+}
+
+#navbarNav{
+    width: 100%;
+    border-bottom: 1px solid White;
+    
+}
+
+.navbar-brand{
+    /* border : 1px solid red; */
+}
+
+
+#search-form{
+    /* border : 1px solid red; */
+}

@@ -1,14 +1,20 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from 'react';
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/header/Header';
+import Home from './components/home/Home';  
+import About from './components/about/About';
 
 function App() {
-  const [count, setCount] = useState(0)
+   const [count, setCount] = useState(0);
 
   return (
-    <>
-      <p>Boss the Naeemur Rahman</p>
-    </>
+      <div className='container'>
+        <Header />
+        <Home />
+        {/* <About /> */}
+  </div>
   )
 }
 
-export default App
+export default App;
