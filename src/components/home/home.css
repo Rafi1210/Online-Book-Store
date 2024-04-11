@@ -13,13 +13,9 @@
     height: 500px;
     width: 300px;
     margin: 10px;
-    box-shadow: 10px 10px 5px 5px gray; 
+    /* box-shadow: 10px 10px 5px 5px gray;  */
 }
-.navbar-nav-btn{
-    /* border : 1px solid blue; */
-    padding: 10px;
-    margin: 10px;
-    border: 20px;
-    width: 120px;
-    height: 40px;
+
+#navbar-nav-btn{
+    margin: 0;
 }
