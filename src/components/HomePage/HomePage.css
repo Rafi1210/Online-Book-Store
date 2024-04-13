@@ -1,13 +1,24 @@
+.home-container{
+    /* border: 1px solid red; */
+    padding: 70px;
+    margin: 10px;
+}
 #time{
     height: 50px;
+    width: 250px;
+}
+.time-container{
+    display: flex;
+    justify-content : center;
 }
 .card-grp{
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 50px;
-    margin: 10px;
+    gap: 40px;
+    margin: 5px;
     
    
 }
@@ -26,7 +37,11 @@
 }
 .img-cls{
     margin: 10px;
+    border: 10px solid lightslategrey;
+    border-radius: 4px;
+    padding: 10px;
 }
+
 #navbar-nav-btn{
     margin: 0;
 }

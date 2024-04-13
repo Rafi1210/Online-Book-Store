@@ -1,33 +1,23 @@
-import React from 'react'
 import "./header.css";
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+
 import cart from './icons/cart.svg';
 import line from './icons/Line.svg'
 
 const header = () => {
 
-  return (
-      <div className="d-flex justify-content-center ">
-      <div className="nav-bar">
-      <nav id="navbarNav" className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark d-flex justify-content-between">
-      <div className="collapse navbar-collapse d-flex justify-content-around"
-        
-      >
+  return (      
+      <nav  className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark d-flex justify-content-between">
+        <div className="nav-grand-parent">
+
+        <div className="nav-parent">
+      <div className="collapse navbar-collapse d-flex justify-content-around">
       <a className="navbar-brand" href="#home"
       >Book World
       </a>
       <a className="" href="#">
           <img src={line} width="25" height="25" className="d-inline-block align-top" alt="" />
         </a>
-      {/* <button
-        className="navbar-toggler"
-        type="button"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button> */}
+    
       
         <ul className="navbar-nav">
           <li className="nav-item active">
@@ -61,11 +51,11 @@ const header = () => {
         <button className="navbar-nav-btn btn btn-outline-light my-2 my-sm-0" type='submit'>Sign Up</button>
         </ul>
       </div>
-      </nav>
-    </div>
+     
 
   </div>
- 
+  </div>
+  </nav>
   )
 }
 

@@ -1,27 +1,27 @@
-import React from 'react'
-import "./home.css";
+import "./HomePage.css";
 import Card from 'react-bootstrap/Card';
-import CardGroup from 'react-bootstrap/CardGroup';
-import book1 from './books/book1.jpg';
-import book2 from './books/bigsleep.jpeg';
-import book3 from './books/seastars.jpg';
 
 
-const home = () => {
+const HomePage = () => {
   const handleTime = () => {
     const demoElement = document.getElementById('demo');
     if (demoElement) {
-      demoElement.innerHTML = new Date().toString();
+      demoElement.innerText = new Date();
     }
   };
   return (
-    <div>         
-          <button id='time' onClick={handleTime}>What is the time?</button>
+    <div className='home-container'> 
+       <div className="time-container">
+       <ul id="navbar-nav-btn">
+
+       <button  id="time" className="navbar-nav-btn btn btn-outline-dark my-2 my-sm-0"onClick={handleTime}>What is the time?</button>
           <p id="demo"></p>
+          </ul>
+       </div>
 
      <div className='card-grp'>
       <Card className='card'>
-      <img src={book1} width="140px" height="220px" className="d-inline-block align-top img-cls" alt="" />
+      <img src = "/assets/books/book1.jpg" width="140px" height="220px" className="d-inline-block align-top img-cls" alt="" />
         <Card.Body >
           <Card.Title> THE LAST WATCH </Card.Title>
           <Card.Title> $75 </Card.Title>
@@ -37,7 +37,7 @@ const home = () => {
       </Card>
 
       <Card className='card'>
-      <img src={book2} width="140px" height="220px" className="d-inline-block align-top" alt="" />
+      <img src = "/assets/books/bigsleep.jpeg" width="140px" height="220px" className="d-inline-block align-top img-cls" alt="" />
         <Card.Body >
           <Card.Title> THE BIG SLEEP </Card.Title>
           <Card.Title> $84 </Card.Title>
@@ -53,7 +53,7 @@ const home = () => {
       </Card>
 
       <Card className='card'>
-      <img src={book3} width="140px" height="220px" className="d-inline-block align-top" alt="" />
+      <img src= "/assets/books/seastars.jpg" width="140px" height="220px" className="d-inline-block align-top img-cls" alt="" />
         <Card.Body >
           <Card.Title> TO SLEEP IN A SEA OF STARS </Card.Title>
           <Card.Title> $92 </Card.Title>
@@ -67,14 +67,12 @@ const home = () => {
         </Card.Footer>
         </Card.Body>
       </Card>
-     
-    </div>
-    <div className='card-grp'>
+
       <Card className='card'>
-      <img src={book1} width="140px" height="220px" className="d-inline-block align-top img-cls" alt="" />
+      <img src = "/assets/books/luminousdead.jpg" width="140px" height="220px" className="d-inline-block align-top img-cls" alt="" />
         <Card.Body >
-          <Card.Title> THE LAST WATCH </Card.Title>
-          <Card.Title> $75 </Card.Title>
+          <Card.Title> THE LUMINOUS DEAD </Card.Title>
+          <Card.Title> $102 </Card.Title>
 
           <Card.Text>
             This is a wider card with supporting text below as a natural lead-in
@@ -85,44 +83,11 @@ const home = () => {
         </Card.Footer>
         </Card.Body>
       </Card>
-
-      <Card className='card'>
-      <img src={book2} width="140px" height="220px" className="d-inline-block align-top" alt="" />
-        <Card.Body >
-          <Card.Title> THE BIG SLEEP </Card.Title>
-          <Card.Title> $84 </Card.Title>
-
-          <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </Card.Text>
-          <Card.Footer className='card-footer'>
-        <button className="navbar-nav-btn btn btn-outline-dark my-2 my-sm-0" type='submit'> Buy Now </button>
-        </Card.Footer>
-        </Card.Body>
-      </Card>
-
-      <Card className='card'>
-      <img src={book3} width="140px" height="220px" className="d-inline-block align-top" alt="" />
-        <Card.Body >
-          <Card.Title> TO SLEEP IN A SEA OF STARS </Card.Title>
-          <Card.Title> $92 </Card.Title>
-
-          <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </Card.Text>
-          <Card.Footer className='card-footer'>
-        <button className="navbar-nav-btn btn btn-outline-dark my-2 my-sm-0" type='submit'> Buy Now </button>
-        </Card.Footer>
-        </Card.Body>
-      </Card>
-     
     </div>
 
     <div className='card-grp'>
       <Card className='card'>
-      <img src={book1} width="140px" height="220px" className="d-inline-block align-top img-cls" alt="" />
+      <img src = "/assets/books/book1.jpg" width="140px" height="220px" className="d-inline-block align-top img-cls" alt="" />
         <Card.Body >
           <Card.Title> THE LAST WATCH </Card.Title>
           <Card.Title> $75 </Card.Title>
@@ -138,7 +103,7 @@ const home = () => {
       </Card>
 
       <Card className='card'>
-      <img src={book2} width="140px" height="220px" className="d-inline-block align-top" alt="" />
+      <img src = "/assets/books/bigsleep.jpeg" width="140px" height="220px" className="d-inline-block align-top img-cls" alt="" />
         <Card.Body >
           <Card.Title> THE BIG SLEEP </Card.Title>
           <Card.Title> $84 </Card.Title>
@@ -154,7 +119,7 @@ const home = () => {
       </Card>
 
       <Card className='card'>
-      <img src={book3} width="140px" height="220px" className="d-inline-block align-top" alt="" />
+      <img src= "/assets/books/seastars.jpg" width="140px" height="220px" className="d-inline-block align-top img-cls" alt="" />
         <Card.Body >
           <Card.Title> TO SLEEP IN A SEA OF STARS </Card.Title>
           <Card.Title> $92 </Card.Title>
@@ -168,11 +133,92 @@ const home = () => {
         </Card.Footer>
         </Card.Body>
       </Card>
-     
+
+      <Card className='card'>
+      <img src = "/assets/books/luminousdead.jpg" width="140px" height="220px" className="d-inline-block align-top img-cls" alt="" />
+        <Card.Body >
+          <Card.Title> THE LUMINOUS DEAD </Card.Title>
+          <Card.Title> $102 </Card.Title>
+
+          <Card.Text>
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This content is a little bit longer.
+          </Card.Text>
+          <Card.Footer className='card-footer'>
+        <button className="navbar-nav-btn btn btn-outline-dark my-2 my-sm-0" type='submit'> Buy Now </button>
+        </Card.Footer>
+        </Card.Body>
+      </Card>
     </div>
 
+    <div className='card-grp'>
+      <Card className='card'>
+      <img src = "/assets/books/book1.jpg" width="140px" height="220px" className="d-inline-block align-top img-cls" alt="" />
+        <Card.Body >
+          <Card.Title> THE LAST WATCH </Card.Title>
+          <Card.Title> $75 </Card.Title>
+
+          <Card.Text>
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This content is a little bit longer.
+          </Card.Text>
+          <Card.Footer className='card-footer'>
+        <button className="navbar-nav-btn btn btn-outline-dark my-2 my-sm-0" type='submit'> Buy Now </button>
+        </Card.Footer>
+        </Card.Body>
+      </Card>
+
+      <Card className='card'>
+      <img src = "/assets/books/bigsleep.jpeg" width="140px" height="220px" className="d-inline-block align-top img-cls" alt="" />
+        <Card.Body >
+          <Card.Title> THE BIG SLEEP </Card.Title>
+          <Card.Title> $84 </Card.Title>
+
+          <Card.Text>
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This content is a little bit longer.
+          </Card.Text>
+          <Card.Footer className='card-footer'>
+        <button className="navbar-nav-btn btn btn-outline-dark my-2 my-sm-0" type='submit'> Buy Now </button>
+        </Card.Footer>
+        </Card.Body>
+      </Card>
+
+      <Card className='card'>
+      <img src= "/assets/books/seastars.jpg" width="140px" height="220px" className="d-inline-block align-top img-cls" alt="" />
+        <Card.Body >
+          <Card.Title> TO SLEEP IN A SEA OF STARS </Card.Title>
+          <Card.Title> $92 </Card.Title>
+
+          <Card.Text>
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This content is a little bit longer.
+          </Card.Text>
+          <Card.Footer className='card-footer'>
+        <button className="navbar-nav-btn btn btn-outline-dark my-2 my-sm-0" type='submit'> Buy Now </button>
+        </Card.Footer>
+        </Card.Body>
+      </Card>
+
+      <Card className='card'>
+      <img src = "/assets/books/luminousdead.jpg" width="140px" height="220px" className="d-inline-block align-top img-cls" alt="" />
+        <Card.Body >
+          <Card.Title> THE LUMINOUS DEAD </Card.Title>
+          <Card.Title> $102 </Card.Title>
+
+          <Card.Text>
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This content is a little bit longer.
+          </Card.Text>
+          <Card.Footer className='card-footer'>
+        <button className="navbar-nav-btn btn btn-outline-dark my-2 my-sm-0" type='submit'> Buy Now </button>
+        </Card.Footer>
+        </Card.Body>
+      </Card>
+    </div>
+   
     </div>
   )
 }
 
-export default home
+export default HomePage;

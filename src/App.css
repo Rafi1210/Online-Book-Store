@@ -1,29 +1,7 @@
 body{
     background-color: rgb(255, 255, 255)!important;
 }
-/* .search-form{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex: auto;
 
-} */
-.container{
-    /* border: 1px solid blue; */
-    align-items: top;
-    
-}
-.primary-container{
-    /* border: 1px solid red; */
-    margin-top: 0px;
-    width: 1300px;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: top;
-    
-    }
     .navbar-nav-btn{
     /* border : 1px solid blue; */
     padding: 10px;
