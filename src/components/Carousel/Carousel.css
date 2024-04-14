@@ -1,0 +1,19 @@
+
+.h1-header{
+    font-size: 100px;
+    font-family: cursive;
+    color: white;
+}
+.car-container{
+     /* border: 10px solid red; */
+
+}
+.car-parent-container{
+     /* border: 10px solid blue; */
+     margin: 10px;
+     margin-top: 60px;
+}
+.car-para{
+    font-size: 30px;
+    font-family: monospace;
+}
