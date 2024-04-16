@@ -43,12 +43,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 500px;
+    height: 550px;
     width: 300px;
     margin: 10px;
     /* margin-bottom: 50px; */
-    border: 1px solid black;
-    box-shadow: 5px 5px whitesmoke; 
+    border: 1px solid whitesmoke;
+    box-shadow: 10px 10px 5px whitesmoke; 
     
 }
 .img-cls{
@@ -65,13 +65,19 @@
     background-color:transparent;
     /* border: 1px solid red; */
     margin : 0;
-    padding: 0;
-    padding-top: 2px;
+    margin-bottom: 20px;
+    padding: 5px;
     border-top: 0.5px solid whitesmoke;
+
 }
 #demo{
     /* border: 1px solid red; */
     margin: 5px;
     display: flex;
     justify-content: center;
+}
+.card-body{
+    /* border: 1px solid red; */
+    /* height: 200px; */
+    width: 250px;
 }
